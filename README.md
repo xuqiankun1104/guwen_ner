@@ -37,8 +37,9 @@ pytorch-crf==0.7.2
 ------------train.txt：训练数据
 ------------dev.txt：测试数据
 --config.py：配置
+--fin_process.py: 还原测试数据
 --model.py：模型
---process.py：处理ori数据得到ner数据
+--preprocess.py：处理训练数据得到ner数据
 --predict.py：加载训练好的模型进行预测
 --main.py：训练和测试
 ```
