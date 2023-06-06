@@ -48,7 +48,7 @@ pytorch-crf==0.7.2
 这里以guwen数据为例，其余数据类似。
 
 ```python
-1、在preprocess.py里面ner_data下的数据进行预处理，ner_data下不放呢数据样本：
+1、在preprocess.py里面ner_data下的数据进行预处理，ner_data文件夹包含txt文件数据样本如下：
 --labels.txt
 OFI
 BOOK
@@ -76,10 +76,10 @@ PER
 
 ```python
 max_seq_len=512
-train_batch_size=12
-dev_batch_size=12
+train_batch_size=8
+dev_batch_size=8
 save_step=500
-epochs=20
+epochs=50
 ```
 
 ```python
