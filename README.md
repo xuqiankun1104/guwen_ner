@@ -80,7 +80,7 @@ max_seq_len=512
 train_batch_size=8
 dev_batch_size=8
 save_step=500
-epochs=50
+epochs=40
 ```
 
 ```python
