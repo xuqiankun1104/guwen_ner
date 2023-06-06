@@ -1,0 +1,49 @@
+{
+  "bert_dir": "./model_hub/bert-ancient-chinese/",
+  "output_dir": "./checkpoint/guwen",
+  "data_dir": "./data/",
+  "data_path": "./data/guwen/ner_data",
+  "labels": [
+    "BOOK",
+    "OFI",
+    "PER"
+  ],
+  "bio_labels": [
+    "O",
+    "B-BOOK",
+    "I-BOOK",
+    "B-OFI",
+    "I-OFI",
+    "B-PER",
+    "I-PER"
+  ],
+  "num_labels": 7,
+  "label2id": {
+    "O": 0,
+    "B-BOOK": 1,
+    "I-BOOK": 2,
+    "B-OFI": 3,
+    "I-OFI": 4,
+    "B-PER": 5,
+    "I-PER": 6
+  },
+  "id2label": {
+    "0": "O",
+    "1": "B-BOOK",
+    "2": "I-BOOK",
+    "3": "B-OFI",
+    "4": "I-OFI",
+    "5": "B-PER",
+    "6": "I-PER"
+  },
+  "max_seq_len": 512,
+  "epochs": 30,
+  "train_batch_size": 8,
+  "dev_batch_size": 8,
+  "bert_learning_rate": 3e-05,
+  "crf_learning_rate": 0.003,
+  "adam_epsilon": 1e-08,
+  "weight_decay": 0.01,
+  "warmup_proportion": 0.01,
+  "save_step": 500
+}
